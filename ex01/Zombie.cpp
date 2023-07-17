@@ -6,7 +6,7 @@
 /*   By: orakib <orakib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/16 11:06:02 by orakib            #+#    #+#             */
-/*   Updated: 2023/07/16 13:43:41 by orakib           ###   ########.fr       */
+/*   Updated: 2023/07/17 15:45:24 by orakib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,7 @@ Zombie::Zombie()
 
 Zombie::Zombie(std::string str)
 {
-	if (str.empty())
-		this->name = "";
-	else
-		this->name = str;
+	this->name = str;
 }
 
 Zombie::~Zombie()

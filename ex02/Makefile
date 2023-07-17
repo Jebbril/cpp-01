@@ -6,15 +6,13 @@
 #    By: orakib <orakib@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/16 11:00:40 by orakib            #+#    #+#              #
-#    Updated: 2023/07/17 14:05:57 by orakib           ###   ########.fr        #
+#    Updated: 2023/07/17 15:52:25 by orakib           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = zombies
+NAME = main
 
-SRC = main.cpp zombieHorde.cpp Zombie.cpp
-
-HEADER = Zombie.hpp
+SRC = main.cpp
 
 CC = c++
 
@@ -27,7 +25,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJ)
 
-%.o: %.cpp $(HEADER)
+%.o: %.cpp
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:

@@ -6,7 +6,7 @@
 /*   By: orakib <orakib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/16 11:00:32 by orakib            #+#    #+#             */
-/*   Updated: 2023/07/16 15:02:13 by orakib           ###   ########.fr       */
+/*   Updated: 2023/07/17 15:44:51 by orakib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,6 @@ int	main() {
 	if (!newz1)
 		return (1);
 	newz1->announce();
-	randomChump("omar");
+	randomChump("");
 	delete (newz1);
 }
