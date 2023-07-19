@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanB.cpp                                         :+:      :+:    :+:   */
+/*   HumanB.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: orakib <orakib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/17 16:55:33 by orakib            #+#    #+#             */
-/*   Updated: 2023/07/19 10:53:10 by orakib           ###   ########.fr       */
+/*   Created: 2023/07/17 16:55:41 by orakib            #+#    #+#             */
+/*   Updated: 2023/07/19 10:52:08 by orakib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "HumanB.hpp"
+#ifndef HUMANB_H
 
-HumanB::HumanB(std::string str) {
-	this->name = str;
-	this->arm = NULL;
-}
+#define HUMANB_H
 
-HumanB::~HumanB() {}
+#include "Weapon.hpp"
+#include <iostream>
 
-void	HumanB::setWeapon(Weapon &arm) {
-	this->arm = &arm;
-}
+class	HumanB {
+	private:
+		Weapon		*arm;
+		std::string	name;
+	public:
+		HumanB(std::string str);
+		~HumanB();
+		void	setWeapon(Weapon &arm);
+		void	attack();
+};
 
-void	HumanB::attack() {
-	if (this->arm)
-		std::cout << this->name << " attacks with their " << this->arm->getType() << std::endl;
-	else 
-		std::cout << this->name << " attacks with no weapon" << std::endl;
-}
+#endif

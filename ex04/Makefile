@@ -6,15 +6,15 @@
 #    By: orakib <orakib@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/16 11:00:40 by orakib            #+#    #+#              #
-#    Updated: 2023/07/19 11:44:48 by orakib           ###   ########.fr        #
+#    Updated: 2023/07/19 13:23:38 by orakib           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = violence
+NAME = sed
 
-SRC = main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
+SRC = main.cpp Sed.cpp
 
-HEADER = Weapon.hpp HumanA.hpp HumanB.hpp
+HEADER = Sed.hpp
 
 CC = c++
 
