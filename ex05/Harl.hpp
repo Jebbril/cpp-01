@@ -1,23 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Sed.hpp                                            :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: orakib <orakib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/19 11:00:17 by orakib            #+#    #+#             */
-/*   Updated: 2023/07/21 17:07:09 by orakib           ###   ########.fr       */
+/*   Created: 2023/07/21 19:03:44 by orakib            #+#    #+#             */
+/*   Updated: 2023/07/21 19:06:34 by orakib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SED_H
+#ifndef HARL_H
 
-#define SED_H
+#define HARL_H
 
-#include <string>
 #include <iostream>
-#include <fstream>
+#include <string>
 
-int	mysed(std::string filename, std::string s1, std::string s2);
+class	Harl {
+	private:
+		void	debug(void);
+		void	info(void);
+		void	warning(void);
+		void	error(void);
+	public:
+		void	complain(std::string level);
+};
 
 #endif
