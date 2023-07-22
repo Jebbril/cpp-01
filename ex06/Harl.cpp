@@ -6,7 +6,7 @@
 /*   By: orakib <orakib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 19:03:53 by orakib            #+#    #+#             */
-/*   Updated: 2023/07/22 20:29:07 by orakib           ###   ########.fr       */
+/*   Updated: 2023/07/22 20:39:33 by orakib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,6 @@ void	Harl::complain(std::string level) {
 
 	while (i < 4 && levels[i] != level)
 		i++;
-	if (i < 4)
-		(this->*(funcs[i]))();
+	while (i < 4)
+		(this->*(funcs[i++]))();
 }

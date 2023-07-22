@@ -6,11 +6,11 @@
 #    By: orakib <orakib@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/16 11:00:40 by orakib            #+#    #+#              #
-#    Updated: 2023/07/22 20:31:15 by orakib           ###   ########.fr        #
+#    Updated: 2023/07/22 20:39:07 by orakib           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Harl
+NAME = harlFilter
 
 SRC = main.cpp Harl.cpp
 

@@ -1,23 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: orakib <orakib@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/21 19:03:31 by orakib            #+#    #+#             */
-/*   Updated: 2023/07/22 20:32:20 by orakib           ###   ########.fr       */
+/*   Created: 2023/07/21 19:03:44 by orakib            #+#    #+#             */
+/*   Updated: 2023/07/21 19:06:34 by orakib           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Harl.hpp"
+#ifndef HARL_H
 
-int	main(void) {
-	Harl	test;
+#define HARL_H
 
-	test.complain("");
-	test.complain("DEBUG");
-	test.complain("INFO");
-	test.complain("WARNING");
-	test.complain("ERROR");
-}
+#include <iostream>
+#include <string>
+
+class	Harl {
+	private:
+		void	debug(void);
+		void	info(void);
+		void	warning(void);
+		void	error(void);
+	public:
+		void	complain(std::string level);
+};
+
+#endif
